@@ -109,7 +109,9 @@ Copy and paste contact id into parameter and remember connection Id
         
 4 . Step fourth. Publish and subscribe your second sandbox
 
-Before proceeding, make sure the following URLS are present at 
+You may run the code to publish and subscribe your second sandbox from any sandbox (including the first sandbox or the second).
+
+However, before proceeding, make sure that on environment where you are going to run you code, the following URLS are present at 
 Remote sites 
 
 test.salesforce.com/0rp
@@ -135,8 +137,8 @@ and I couldn't  find ip in list of login history, so then I just decided to run 
 
 test.salesforce.com/05G
 
-On the second sandbox you need accept invitation first (from the email you should have received after 2. Step second.
-If you didn't receive the email then check your spam folder or check if email administration is set to all emails.
+On the second sandbox you need accept invitation first ( from the email you should have received after the second step,
+if you didn't receive the email then check your spam folder or check if email administration is set to all emails ).
 
 After you have found the email, clicked the link and accepted invitation, you may run this code, each action has to be executed separately, so you can uncomment following lines one by one in your anonymous execution window
 
@@ -161,3 +163,5 @@ If you have too many fields or object you may split your map into several calls 
 
         //ReconnectSandboxesSettings.subscribeTheFirstSandboxFields1();
         //ReconnectSandboxesSettings.subscribeTheFirstSandboxFields2();
+        
+ Hope this explanation would be enough for anyone eager to automatize the process of reconnecting sandboxes after refresh. If not feel free to contact me by any of my emails or you may also open a ticket here.
